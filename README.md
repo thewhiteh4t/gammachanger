@@ -10,13 +10,4 @@ cd gammachanger/
 chmod +x gammachanger.sh
 ./gammachanger.sh
 ```
-```bash
-[+] Connected Display    : eDP-1-1
-[+] Current Gamma Values : 1.5:1.5:1.5
-[!] Enter New Values : 
-[+] Red   : 1
-[+] Green : 1
-[+] Blue  : 1
-[!] Applying New Gamma Values...
-[+] Done.
-```
+![example](https://github.com/thewhiteh4t/gammachanger/blob/master/gc1.png)
