@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #--------------------------------------------------------------------
 # Author : thewhiteh4t
 #
@@ -8,11 +8,12 @@
 #--------------------------------------------------------------------
 echo
 # fetch display name using xrandr query
-disp=$(xrandr --query | grep -w connected | cut -d ' ' -f 1)
+opt=$(xrandr --query | grep -w connected | cut -d ' ' -f 1)
 # fetch current gamma values using xrandr verbose
 curr=$(xrandr --verbose | grep Gamma | awk '{print $2}')
-echo "[+] Connected Display    : "$disp
+echo "[+] Connected Displays   : "$opt
 echo "[+] Current Gamma Values : "$curr
+read -p "[+] Enter Display Name   : " disp
 echo "[!] Enter New Values : "
 read -p "[+] Red   : " red
 read -p "[+] Green : " green
